@@ -39,3 +39,15 @@ export type Product = {
   };
   returnPolicy: string;
 };
+
+export type FilterState = {
+  category: string;
+  priceRange: number;
+  search: string;
+};
+
+export type Action =
+  | { type: "SET_CATEGORY"; payload: string }
+  | { type: "SET_PRICE"; payload: number }
+  | { type: "SET_SEARCH"; payload: string }
+  | { type: "RESET" };

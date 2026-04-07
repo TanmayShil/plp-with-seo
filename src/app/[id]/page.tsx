@@ -45,7 +45,6 @@ export default async function ProductPage({
   params: { id: string };
 }) {
   const { id } = await params;
-  console.log("-----", id);
   const queryClient = getQueryClient();
 
   // ONLY ONE FETCH
@@ -56,7 +55,6 @@ export default async function ProductPage({
 
   // Reuse cached data (NO extra API call)
   const product = queryClient.getQueryData<any>(["product", id]);
-  console.log("product----", product);
 
   return (
     <main className="container mx-auto p-4">

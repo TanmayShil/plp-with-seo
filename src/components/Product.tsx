@@ -4,9 +4,7 @@ import { useProduct } from "@/hooks/useProducts";
 import Image from "next/image";
 
 export default function Product({ id }: { id: string }) {
-  console.log("product", id);
   const { data, isLoading } = useProduct(id);
-  console.log("data", data);
 
   if (isLoading) return <p>Loading...</p>;
 
