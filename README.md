@@ -1,4 +1,7 @@
 # 🛍 Product Listing Page (PLP)
+```
+https://plp-with-seo.vercel.app/
+```
 ---
 
 # 📌 Project Overview
